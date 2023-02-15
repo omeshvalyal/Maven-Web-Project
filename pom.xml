@@ -168,9 +168,6 @@
           <source>1.7</source>
           <target>1.7</target>
         </configuration>
-	      <configuration>
-                        <finalName>app</finalName>
-                    </configuration>
       </plugin>     
     </plugins>
   </build>
@@ -205,6 +202,9 @@
                 <goals>
                   <goal>prepare-agent</goal>
                 </goals>
+		       <configuration>
+                        <finalName>app</finalName>
+                    </configuration>
               </execution>
               <execution>
                 <id>agent-for-it</id>
