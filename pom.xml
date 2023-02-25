@@ -177,9 +177,9 @@
                 <goals>
                   <goal>prepare-agent</goal>
                 </goals>
-		  //     <configuration>
-                   //     <finalName>app</finalName>
-               //     </configuration>
+		 <!--   <configuration> -->
+                    <!--    <finalName>app</finalName> -->
+                <!--   </configuration> -->
               </execution>
               <execution>
                 <id>agent-for-it</id>
