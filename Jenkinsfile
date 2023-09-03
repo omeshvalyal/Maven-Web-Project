@@ -1,5 +1,8 @@
 pipeline{
   agent any
+   tools {
+         maven 'maven'
+    }
 stages 
   {
 stage("codecheckout") {
@@ -8,8 +11,7 @@ git credentialsId: 'github', url: 'git@github.com:DevOps-Traning/Maven-Web-Proje
 
 stage("mavenbuild")
 {
-def mvnHOME = tool name: 'linuxmaven', type: 'maven'
-sh "${mvnHOME}/bin/mvn clean package"
+sh "mvn clean package"
 }
 
 //stage("tomcatdeployment") 
