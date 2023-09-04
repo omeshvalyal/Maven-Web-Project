@@ -6,12 +6,17 @@ pipeline{
 stages 
   {
 stage("codecheckout") {
-git credentialsId: 'github', url: 'git@github.com:DevOps-Traning/Maven-Web-Project.git'
+steps
+  {
+  git credentialsId: 'github', url: 'git@github.com:DevOps-Traning/Maven-Web-Project.git'
+}
 }
 
 stage("mavenbuild")
 {
-sh "mvn clean package"
+steps {
+  sh "mvn clean package"
+}
 }
   }
 }
