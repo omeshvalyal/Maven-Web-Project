@@ -13,6 +13,8 @@ stage("mavenbuild")
 {
 sh "mvn clean package"
 }
+  }
+}
 
 //stage("tomcatdeployment") 
 //{
