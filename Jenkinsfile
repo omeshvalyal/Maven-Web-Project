@@ -21,10 +21,3 @@ steps {
   }
 }
 
-//stage("tomcatdeployment") 
-//{
-//sh 'cp /home/ec2-user/.jenkins/workspace/myfirstpipeline/target/*.war /home/ec2-user/tomcat/apache-tomcat-9.0.65/webapps'
-\\}
-\\}
-}
-}
